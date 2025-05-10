@@ -71,7 +71,7 @@ async function fetchWallet() {
         const userId = tg.initDataUnsafe.user?.id || Math.floor(Math.random() * 1000000);
         
         // В реальном приложении здесь должен быть запрос на бэкенд
-        const response = await fetch(`http://localhost:8000/wallet/${userId}`, {
+        const response = await fetch(`http://192.168.1.5:8000/wallet/${userId}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
